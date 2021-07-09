@@ -1,0 +1,32 @@
+@charset "UTF-8"
+
+body{
+    background-color: #0e1fbb;
+}
+h1{
+    color: #4C80D9;
+}
+h1#principal{
+    background-color: #4859F0;
+    text-align: center;
+    color: white;
+}
+.titulo{
+    background-color: black;
+}
+h2{
+    color:#45D4E6;
+}
+.exemplo1{
+    color: rgb(173, 30, 255);
+}
+.exemplo2{
+    color: fuchsia;
+}
+.exemplo3{
+    color: indigo;
+}
+p{
+    text-align: justify;
+    text-indent: 20px;
+}
