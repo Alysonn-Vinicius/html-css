@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclasse</title>
+    <style>
+
+        /* quando passar o mouse por cima da div, ela irá mudar a cor da letra e fundo.*/
+        div:hover {
+            color: rgb(246, 244, 248);
+            background-color: rgb(12, 1, 12);
+            width: 300px;
+        }
+         /* não irá mostrar o teto escondido da cor de fundo darkmagenta.*/
+        div > p{
+            display: none;
+            background-color: darkmagenta;
+        }
+        div > a{
+            display: none;
+        } 
+        div:hover >a{
+            display: block;
+            color: darkturquoise;
+        }
+
+         /* quando passar o mouse por cima da div, ela irá mostrar o texto que foi escondido.*/
+        div:hover > p {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>EXEMPLO DE HOUVER</h1>
+    <p>Passe o mouse por cima do texto</p>
+    <div>Passe o mouse aqui e a cor mudará!
+        <p>Texto escondido...</p>  <!--só vai ser mostrado com o mouse em cima.-->
+    </div>
+    <h2>OUTRO EXEMPLO:</h2>
+    <div>quer ir para outra página?
+        <a href="pseudoclass.html">outra página!</a>
+    </div> 
+     <!--div é uma "parte" especifica da tela, por exemplo uma "linha"-->
+  <p>fim do exemplo</p>
+</body>
+</html>
