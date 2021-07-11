@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>treino de links</title>
+    <style>
+        /*quando o site for visitado ficará marcado essa cor.*/
+        a:visited{
+            color: rgb(24, 164, 230);
+        }
+        /*tira o sublinado do link, podendo fazer outras alternarações.*/
+        a{
+            color: rgb(212, 4, 4);
+            text-decoration: none;
+        }
+        /*quando o mouse passar por cima irá mudar o a cor do fundo e irá deixar sublinado.*/
+        a:hover{
+            background-color: black;
+            text-decoration: underline, white;
+        }
+        /*quando clicado a cor ficará azul.*/
+        a:active{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Links Personalizado:</h1>
+    <p>Com as Pseudoclasses, podemos alternar a cor e formato de decoração dos links.</p>
+    <h2>Exemplo:</h2>
+    <h3>Personalizando links</h3>
+    <ul>
+        <li><a href="https://www.instagram.com/aly_vinicius/">Meu Instagram</a></li>
+        <li><a href="https://github.com/Alysonn-Vinicius">Meu GitHub</a></li>
+        <li><a href="www.facebook.com/alysonn.vinicius-35">Meu facebook</a></li>
+    </ul>
+    <p>Por padrão os links, ainda não abertos serão na cor azul e sublinhado e os já abertos, ficam na cor margenta(roxeado); Podemos fazer uma alteração nas duas formas com a Pseudoclasse <ins>;visited</ins></p>
+    
+</body>
+</html>
