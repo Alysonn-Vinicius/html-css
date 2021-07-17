@@ -7,13 +7,46 @@
     <title>caixas</title>
     <style>
         h1{
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+            /*ou o shorthand:
+            border: 10px solid darkslategray;*/
+
             padding-top: 10px;    /*parte de cima*/
             padding-right: 10px;  /*parte da direita*/
             padding-bottom: 10px; /*parte de baixo*/
             padding-left: 10px; /*parte da esquerda*/
-            /* ou
+             /* ou
             o shorthand
-            padding: 10px auto 10px auto*/
+            padding: 10px 10px 10px 10px; sempre na ordem: top,right,bottom, left ou se tdoas forem igauis
+            padding: 10px; isso fará que os 4 lados terão os mesmo 10px.*/
+      
+            
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px; 
+            /*ou o shorthand:
+            margin: 10px 10px 10px 10px; na mesma ordem: top,right,bottom e left;
+            se caso quiser centralizar as margens da esquerda e da direita é só colocar auto nas duas, deixandoo centralizado.*/
+            
+            /*margin:auto;  /*deixa o box centralizado.*/
+            outline: 5px dashed darkslategray;
+            /* largura tipo e cor.*/
+        /*display: inline/// deixa qualquer box level para box level.*/
+        }
+        a{
+            border: 10px solid red;
+            
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
         }
     </style>
 </head>
