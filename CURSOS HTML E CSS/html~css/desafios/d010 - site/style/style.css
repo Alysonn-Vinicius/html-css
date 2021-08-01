@@ -51,11 +51,12 @@ header > p{
     font-family: var(--fonte-padrao);
     font-size: 1.2em;                   /*aumentando o tamanho da fonte.*/
     color: white;
-    max-width: 500px;                    /*para deixar o site adaptavel e não quebrar o texto.*/
+    max-width: 600px;                    /*para deixar o site adaptavel e não quebrar o texto.*/
     margin: auto;                       /*para ficar sempre centralizado*/
     padding-right: 10px;                /*essas duas servem para deixar o texto separado da barra lateral.*/
     padding-left: 10px;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.658);
+    padding-bottom: 50px;
 }
 
 nav{
@@ -66,7 +67,7 @@ nav{
 
 nav a{
     color: white;
-    padding: 5px;                       /*serve para da uma afastada de cada item*/
+    padding: 7px;                       /*serve para da uma afastada de cada item*/
     text-decoration: none;              /*serve para tirar o sublinhado*/
     font-weight: bold;                  /*deixar as letras em negrito e mais destacado*/
     transition-duration: 0.5s;          /*quando o mouse passar por cima, vai levar um segundo de transição.*/
@@ -75,6 +76,7 @@ nav a{
 nav a:hover{
     background-color: var(--cor03);
     color: var(--cor05);
+    border-radius: 5px;
 }
 
 main{
@@ -124,6 +126,9 @@ main .pequena{     /*a iamgem estava muito grande e foi "diminuida ou adaptavél
     margin: auto;           /*para centralizar a imagem.*/
 }
 
+.external::after {
+    content: '\00A0\🔗';
+}
 main a{
     font-weight: bolder;
     background-color: var(--cor01);
@@ -138,26 +143,67 @@ main a:hover{
     color: var(--cor04);
 }
 
+.video{
+    position: relative;
+    background-color: var(--cor04);
+    
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-bottom:  15px;
+    padding-bottom: 59%;
+}
+.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
 aside h3{
-    background-color: var(--cor05);
+    background-color: var(--cor04);
     color: white;
-    padding: 15px 10px;
+    padding: 10px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
 }
 aside strong{
     color: var(--cor05);
 }
 aside {
     background-color: var(--cor01);
-    padding: 0px;
-    padding-left: 10px;
-    margin: 0px;
+    padding: 10px;
     border-radius: 10px;
-
+    box-shadow: 3px 3px 8px rgb(0 0 0 / 28%);
 }
+
+ul{
+    list-style-type: '✔️\0020\0020';                /*deixa as listas com o "✔️" e os "0020" significa espaço ou bloco em branco.*/
+    columns: 2;                                     /*Separa os <li> em iguais ou quase, deixando eles de forma alinhada.*/
+    list-style-position: inside;                    /*deixar os marcados na parte interna da caixa, dentro do bloco aside */
+}                                                   /*pode conter o outside que deixa a marcação de fora do bloco.*/
 
 footer{
     background-color: var(--cor05);
     color: white;
     text-align: center;
-    padding: 10px;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer a{
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover{
+    color: var(--cor02);
+    text-decoration: underline;
+}
+footer p{
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 1em;
 }
