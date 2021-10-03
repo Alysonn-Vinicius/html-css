@@ -1,0 +1,110 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+--cor00: #141E26;
+--cor01: #0F4040;
+--cor02: #F2F2F2;
+--cor03: #33A6A6;
+--cor04: #070F10;
+}
+
+body{
+    background-color:grey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: var(--cor01);
+    margin: 1px;
+    padding: 30px;
+    color: white;
+    text-align: center;
+}
+main{
+    width: 400px;
+    height: 400px;
+    background-color: var(--cor02);
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.555);
+}
+aside{
+    margin: auto;
+    justify-content: center;
+    padding: 20px;
+}
+h2, h3, input, button{
+    margin: 10px 0px;
+}
+#email{
+    border-radius: 5px;
+    padding: 2px;
+    border-color: var(--cor03);
+    border-style: solid;
+    width: 200px;
+}
+#senha{
+    border-radius: 5px;
+    padding: 2px;
+    border-color: var(--cor03);
+    border-style: solid;
+    width: 200px;
+}
+.botao{
+    background-color: var(--cor01);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+#inicio{
+    flex-direction:row-reverse;
+    justify-content: right;
+}
+.perfil{
+    background-color: var(--cor03);
+    border-radius: 10px;
+    padding: 20px;
+    width: 60px;
+    color: white;
+    
+}
+.clientes{
+    margin: 10px 0px;
+    background-color: var(--cor03);
+    border-radius: 10px;
+    padding: 20px;
+    width: 60px;
+    color: white;
+}
+
+.cadastro{
+    background-color: var(--cor03);
+    border-radius: 10px;
+    padding: 20px;
+    width: 60px;
+    color: white;
+}
+
+.temail{
+    text-align: left;
+}
+.tsenha{
+    text-align: left;
+}
+a{
+    font-style: normal;
+    color: white;
+    font-display: none;
+}
+footer{
+    background-color: var(--cor01);
+    color: white;
+    text-align: center;
+    margin: 1px;
+    padding: 20px;
+}
