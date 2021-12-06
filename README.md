@@ -1,2 +1,3 @@
-# MeusExercicios_HTML-CSS
- primeiro repositório para colocar meus exercicios e treinos com html e css
+**#Meus Exercicios de HTML e CSS**
+***
+Aqui está uma visualização dos meus execiciios feitos com o decorrer do curso de html do professor  **Gustavo Guanabara**.
