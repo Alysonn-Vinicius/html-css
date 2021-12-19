@@ -1,15 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas Grandes</title>
+    <style>
+        table{
+            width: 500px;
+        }
+        th{
+        background-color:grey;
+        color:white;
+
+        }
+        th, td {
+            border: 1px solid black;
+
+        }
+    </style>
 </head>
+
 <body>
     <h1>anatomia para tabelas grandes</h1>
     <!--Em tabelas grandes tem se o 
-    Thead: a cabeça da tabelça, o Tbody{ corpo da tabela} e tfoot seria o rodapé da tabela.-->
-    
+    Thead: a cabeça da tabelça, o Tbody{ corpo da tabela} e tfoot seria o rodapé da tabela.
+    ex:
+    -->
+    <table>
+        <thead>
+            <th>Estado</th>
+            <!--titulo da tabela-->
+            <th>População</th>
+        </thead>
+        <tbody> <!--Corpo da tabela-->
+            <td>São paulo</td>
+            <td>456 456 456</td>
+        </tbody>
+        <tfoot>  <!--rodapé da tabela-->
+           <th>Total:</th>
+           <th>0000</th>
+
+        </tfoot>
+    </table>
+
 </body>
+
 </html>
