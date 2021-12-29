@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos de bordas</title>
+    <style>
+        .solid{
+            border: 5px solid blue;
+            /*
+                border-width: 5px; define a espessura da borda
+                border-styles: solid; define o tipo de borda
+                border-color: ; muda a cor da borda
+            */
+            padding: 5px;
+        }
+        .dotted{
+            border: 5px dotted red;
+            padding: 5px;
+        }
+        .dashed{
+            border: 5px dashed red;
+            padding: 5px;
+        }
+        .double{
+            border: 5px double green;
+            padding: 5px;
+        }
+        .groove{
+            border: 10px groove red; /*deixa com efeito 3d*/
+            padding: 5px;
+        }
+        .ridge{
+            border: 10px ridge red;   /*deixa com efeito 3d porém inverte o do groove
+            */
+            padding: 5px;
+        }
+        .inset{
+            border: 5px inset green;
+            padding: 5px;
+        }
+        .outset{
+            border: 5px outset green; /*é o inverso do inset*/
+            padding: 5px;
+        }
+        .border-styles-nova{
+            border-width: 10px;
+            border-color: red black green blue; /*só fazendo com as configurações separadas poderá ser usado esse estilos usando mais de uma cor.*/
+            border-style: groove;
+            padding: 5px;
+        }
+
+        /*
+            border: none;   deixa sem borda;
+            border: hidden; deixa a borda escondida;
+        */
+    </style>
+</head>
+<body>
+    <h1>bordas</h1>
+
+    <div class="solid">
+        exemplo <br>
+        de <br>
+        bordas <br>
+        solid <br>
+    </div> <br>
+
+    <div class="dotted">
+        exemplo <br>
+        de <br>
+        bordas <br>
+        dotted
+    </div> <br>
+
+    <div class="dashed">
+        exemplo <br>
+        de <br>
+        bordas <br>
+        dashed
+    </div> <br>
+
+    <div class="double">
+        exemplo <br>
+        de <br>
+        bordas <br>
+        double
+    </div> <br>
+
+    <div class="groove">
+        exemplo <br>
+        de <br>
+        bordas <br>
+        groove
+    </div> <br>
+
+    <div class="ridge">
+        exemplo <br>
+        de <br>
+        bordas <br>
+        ridge
+    </div> <br>
+
+    <div class="inset">
+        exemplo <br>
+        de <br>
+        bordas <br>
+        inset
+    </div> <br>
+
+    <div class="outset">
+        exemplo <br>
+        de <br>
+        bordas <br>
+        ouset
+    </div> <br>
+    
+        
+    <div class="border-styles-nova">
+        exemplo <br>
+        de <br>
+        bordas <br>
+        ouset <br>
+        nova
+    </div> <br>
+
+</body>
+</html>
