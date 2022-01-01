@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos de bordas</title>
+    <style>
+        /*
+        tamanhos:
+         px -> tamanho fixo.
+         % -> tamanho relativo ao tamanho padrão(16px);
+         em -> tamanho relativo ao container pai(onde está alocado sendo o tamanho, se o container pai for 30px, então 1em vai ser 30px);
+        */
+        div{
+         font-size: 16px;   
+        }
+        .texto{
+            font-size: 32px; /*tamanho fixo*/
+        }
+        .texto2{
+           font-size: 100%; /*corresponde a 16px que é o valor padrão.(ex: 200% é igual a 32px)*/
+        }
+        .texto3{
+            font-size: 2em; /*neste caso fica no mesmo tamnho da div onde está alocado, sendo 60px */
+        }
+        
+    
+        
+    </style>
+</head>
+<body>
+    <h1>bordas</h1>
+
+    <div>
+       <p class="texto">conteudo 1</p>
+       <p class="texto2">conteudo 2</p>
+       <p class="texto3">conteudo 3</p>
+
+    </div>
+
+
+
+</body>
+</html>
