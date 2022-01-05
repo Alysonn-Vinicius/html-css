@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>posicionamneto</title>
+    <style>
+        body{
+            background-color: #007fc7;
+        }
+        #principal{
+            background-color: white;
+            padding: 10px;
+            width: 800px;
+            margin: 10px auto;
+            border-radius: 10px;
+        }
+        p{
+            width: 300px;
+        }
+        .position{
+            border: 1px solid red;
+            /*position: static; é o valor padrão*/
+            position: relative; /*qaundo ativado permite que possa mexer na posição do elemento usando os parametros: top, right, bottom e left.*/ 
+            left: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div id="principal">
+        <h1>Posicionamnetos</h1>
+        <p>P1 - Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus, amet explicabo? Velit necessitatibus magnam eius nobis consequatur rerum quam vel, debitis explicabo molestiae! Sit doloribus facere similique hic quos a.</p>
+        <p class="position">P2 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores blanditiis reiciendis id saepe deleniti, temporibus excepturi animi? Repellendus quisquam voluptas neque voluptatibus quibusdam molestias ducimus debitis. Perspiciatis, asperiores enim! Tempora?</p>
+        <p>P3 - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error voluptatibus, itaque modi eaque ex libero animi neque, quo eligendi harum ipsam totam corrupti et iusto alias architecto. Ex, dicta optio!</p>
+    </div>
+</body>
+</html>
