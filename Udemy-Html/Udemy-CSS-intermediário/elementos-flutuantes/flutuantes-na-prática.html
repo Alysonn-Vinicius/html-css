@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos flutuantes</title>
+    <style>
+        body{
+            background-color: #f4f4f4;
+        }
+        #principal{
+            width: 950px;
+        }
+        .noticia{
+            background-color: #e5e5e5;
+            padding: 10px;
+            width: 280px;
+            margin: 7px;
+            float: left;
+        }
+        .imagem{
+            margin-left: 25px;
+            width: 265px;
+            padding: 5px;
+            float: left;
+        }
+
+        .clear{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div id="principal">
+        <div class="noticia">
+            <h2>Titulo da noticia</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae illum sed, ullam nulla saepe ipsam laboriosam dolores voluptas id eum alias voluptatem exercitationem consequuntur natus molestiae facere porro provident repudiandae?</p>
+            <a href="#">veja mais</a>
+        </div>
+    
+        <div class="noticia">
+            <h2>Titulo da noticia 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae illum sed, ullam nulla saepe ipsam laboriosam dolores voluptas id eum alias voluptatem exercitationem consequuntur natus molestiae facere porro provident repudiandae?</p>
+            <a href="#">veja mais</a>
+        </div>
+    
+        <div class="noticia">
+            <h2>Titulo da noticia 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae illum sed, ullam nulla saepe ipsam laboriosam dolores voluptas id eum alias voluptatem exercitationem consequuntur natus molestiae facere porro provident repudiandae?</p>
+            <a href="#">veja mais</a>
+        </div>
+
+        <!--Fim das noticias-->
+
+        <div class="clear"></div>
+        <div> <!--Galeria de fotos-->
+            <div class="imagem">
+                <img src="imagens/imagem1.png" alt="imagem1">
+                <p>Resumo... Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, quam? Perferendis eligendi distinctio molestiae doloribus aspernatur possimus maiores quisquam reprehenderit aperiam officiis, voluptates mollitia eos deserunt aliquam, quidem, magni tempora.</p>
+            </div>
+
+            <div class="imagem">
+                <img src="imagens/imagem2.png" alt="imagem2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus exercitationem blanditiis voluptatum aliquam ullam quo, sint in veniam veritatis, delectus labore obcaecati error ea quia molestiae voluptatem! Nostrum, quasi. Quo!
+                </p>
+            </div>
+
+            <div class="imagem">
+                <img src="imagens/imagem3.png" alt="imagem3">
+                <p>Resumo.... Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quisquam ab similique animi officia architecto aut nesciunt, at asperiores recusandae cumque odio. Alias dolore impedit quod officiis, aperiam itaque pariatur.</p>
+            </div>
+        
+        </div>
+    </div>
+
+</body>
+</html>

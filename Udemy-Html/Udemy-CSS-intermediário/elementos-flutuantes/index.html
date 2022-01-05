@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #principal{
+            background-color: green;
+
+        }
+        .conteudo{
+            width: 150px;
+            height: 150px;
+            background-color: blueviolet;
+            border:2px solid black;
+            margin:5px;
+            float: left; /*iterns que contém ficam posicionados na direita*/
+        }
+        .conteudo1{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border:2px solid black;
+            margin:5px;
+            float: left; /*iterns que contém ficam posicionados na esquerda*/
+        }
+        .conteudo2{
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            border:2px solid black;
+            margin:5px;
+            padding:10px;
+            float: right; /*iterns que contém ficam posicionados por cima dos elemnetps que não usam float*/
+        }
+        /*
+        float é tag usada para deixar os elemntos flutuantes, podendo conter os valores: left, right e none;
+        */
+
+        .clear{
+            /*clear serve para limpar o fluxo de caixas flutuantes, recebendo os valores: left, right, none, both*/
+            /*clear: left; /*os textos ficam abaixos das caixas flutuantes que estiverem na esquerda*/
+
+            /*clear: right; /*os textos ficam abaixos das caixas flutuantes que estiverem na direita*/
+
+            clear: both; /*os textos ficam abaixos das caixas flutuantes que estiverem em ambos os lados, tanto na direita qunato esquerda.*/
+
+            /*clear: none; /*não ocorre a limpeza das caixas flutuantes*/
+
+        }
+    </style>
+</head>
+<body>
+    <div id="principal">
+        <div class="conteudo">
+            conteudo 1
+        </div>
+        <div class="conteudo">
+            conteudo 2
+        </div>
+        <div class="conteudo">
+            conteudo 3
+        </div>
+        <div class="clear">
+            <p>orem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, quibusdam ab expedita, officiis porro accusantium magnam inventore nemo modi consequatur rerum tempore perspiciatis nostrum explicabo quasi iusto eligendi laborum sapiente? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod magnam porro voluptatum illo amet! Quasi nisi ex ad esse culpa. Dolorem veniam esse officiis non minus 
+            </p>
+        </div>
+    </div>
+    
+</body>
+</html>
