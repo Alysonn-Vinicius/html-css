@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posição</title>
+    <style>
+        body{
+            background-color: #007fc7;
+        }
+        #container{
+            width: 800px;
+            background: whitesmoke;
+            margin: 10px auto;
+            padding: 10px;
+            border-radius: 10px;
+            position: relative; 
+        }
+        
+        .absolute{
+            border: 1px solid red;
+            position: absolute; /*quer dizer que pode fazer qualquer alteração na posição que ele pode ficar em qualquer lugar sem depender da parte de baixo.
+            porém, estará alinhado no container pai se, ele tiver com position relative, caso não esteja, será alinhado no body.*/
+            /*Na rolagem, ele vai acompanhar*/
+            top:200px;
+            left: 300px;
+        }
+        .fixed{
+            border: 1px solid purple;
+            position: fixed; /*deixa o elemento fixo em algum lugar da tela, mesmo se descer ou rolar a tela ainda vai acompanhar no lugar*/
+            top:0px;
+            right: 0px;
+            background-color: #f2f2f2;
+            padding: 10px;
+            margin: 0px;
+        }
+        p{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Posicionamentos</h1>
+        <p> P1  -  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus fugit culpa eum fuga alias labore doloremque dolor explicabo, laudantium libero dignissimos quasi in, ratione cumque sed, omnis minus accusamus vitae.</p>
+        <p class=""> P2  -  Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi delectus ex ipsam maxime eaque pariatur quidem, sunt architecto nemo eos officia. Ratione illo aut ad nulla rem, atque soluta inventore.</p>
+        <P class="fixed"> P3  -  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est unde velit explicabo molestias nesciunt dignissimos odit minus porro nostrum eveniet. Dolore odit soluta laboriosam tempora voluptatem cumque necessitatibus repudiandae fugiat?</P>
+        <p> P4 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam reiciendis iste quas, adipisci odio delectus sint et deleniti facere itaque maiores illum fuga aperiam repudiandae! Culpa accusamus voluptates nisi in!</p>
+        <p> P5 - Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae animi, beatae tenetur vero autem laudantium asperiores, a, quae alias similique possimus quas illum harum. Neque commodi maxime cupiditate eum nesciunt?</p>
+        <p> P6 - Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae reiciendis aliquam, unde ducimus recusandae eius exercitationem, molestias inventore, enim hic voluptatem accusamus at ex sapiente harum. Odio inventore ut labore!</p>
+    </div>  
+    
+</body>
+</html>

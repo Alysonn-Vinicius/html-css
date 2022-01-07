@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posição</title>
+    <style>
+        body{
+            background-color: #007fc7;
+        }
+        #container{
+            width: 800px;
+            background: whitesmoke;
+            margin: 10px auto;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .relative{
+            border: 1px solid red;
+            position: relative; /*Isso deixa ativado a função de poder movimentar em quatros direções: top, right, bottom, left*/
+            left: 20px;
+            /*propriedades de deslocamento que podem movimentar o elemento que estiver com position relative.
+            top, right, bottom, left. podendo conter numeros positivos e negativos.
+            definindo qual lado ele vai e a quantidade de px ele vai ser empurrado para outro lado.
+            */
+        }
+        p{
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Posicionamentos</h1>
+        <p> P1  -  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus fugit culpa eum fuga alias labore doloremque dolor explicabo, laudantium libero dignissimos quasi in, ratione cumque sed, omnis minus accusamus vitae.</p>
+        <p class="relative"> P2  -  Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi delectus ex ipsam maxime eaque pariatur quidem, sunt architecto nemo eos officia. Ratione illo aut ad nulla rem, atque soluta inventore.</p>
+        <P> P3  -  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est unde velit explicabo molestias nesciunt dignissimos odit minus porro nostrum eveniet. Dolore odit soluta laboriosam tempora voluptatem cumque necessitatibus repudiandae fugiat?</P>
+    </div>  
+    
+</body>
+</html>

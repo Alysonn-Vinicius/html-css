@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br-">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .conteudo01{
+            border: 1px solid red;
+            background-color: orange;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            z-index: 1;  /*z-index: indica qual dos elementos irá aparecer mais, dependo do valor que estiver o que tiver mais ficará na frente*/
+        }
+        .conteudo02{
+            border: 1px solid red;
+            background-color: green;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 80px;
+            left: 80px;
+            z-index: 1; /*contexto de empinhamento, definindo com mais elementos quem ficara primeiro*/
+        }
+        .conteudo03{
+            border: 1px solid red;
+            background-color: purple;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 160px;
+            left: 160px;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteudo01">
+        conteudo 02
+    </div>
+
+    <div class="conteudo02">
+        conteudo 02
+    </div>
+
+    <div class="conteudo03">
+        conteudo 03
+    </div>
+    
+</body>
+</html>

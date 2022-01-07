@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline-Block</title>
+    <style>
+        li{
+            margin-bottom: 10px;
+        }
+        .inline{
+            border: 1px solid red;
+            display: inline;
+            
+        }
+        .block{
+            border: 1px solid blue;
+            display: block;
+        }
+        .inline-block{
+            border: 1px solid purple;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>DIsplay</h1>
+    <p>Usamos o DIsplay para definir tipo.
+        <ul>
+            <li><span class="inline"><strong>Inline</strong>: são tags que alinham os elementos todos numa mesma linha e a borda só servem até o conteudo. ex(span,a,img)</span></li>
+
+            <li>
+                <div class="block"><strong>block</strong>: são tags que alinham os elementos todos um a baixo do outro , ocupando todo uma linha. ex(h1, p, table)</div>
+            </li>
+
+            <li>
+                <div class="inline-block"><strong>Inline-block</strong>: Sua largura é definida com base na sua width. e alinham os elementos um abaixo do outro. </div>
+                <p class="inline-block">inline-block</p>
+            </li>
+        </ul>
+    </p>
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>absolute e fixed</title>
+    <style>
+        body{
+            background-color: #007cf7;
+        }
+        #principal{
+            background-color: white;
+            padding: 10px;
+            width: 800px;
+            margin: auto;
+            border-radius: 10px;
+        }
+        h1{
+            color: #2c23d1;
+        }
+        .absolute{
+            position: absolute; /*alinamneto baseado no container pai se ele estiver uma position relative se não, será com o body da   página*/
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="principal">
+        <h1>TESTE</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus illum, nemo doloribus dolore alias aliquid mollitia ullam officia sed esse inventore? Eos culpa sit nihil veritatis totam corporis recusandae soluta?</p>
+
+        <p class="absolute">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor accusantium ipsam et modi quibusdam quod eveniet commodi iure expedita quas rerum, adipisci minima dolorum officiis, facere aperiam laboriosam explicabo cum!</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit facere odio reiciendis perspiciatis labore iusto culpa neque illo non similique dolore unde, modi vitae aperiam facilis id, dolorum quaerat velit.</p>
+    </div>
+    
+</body>
+</html>
