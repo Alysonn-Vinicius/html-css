@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+}
+.titulo{
+    background-color: rgb(139, 139, 19);
+    margin: 0px;
+    height: 200px;
+   text-align: center;
+   margin-bottom: 10px;
+}
+a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 30px;
+    margin-top: 200px;
+}
+a:hover{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+    
+}
+.branco{
+    color: white;
+}
