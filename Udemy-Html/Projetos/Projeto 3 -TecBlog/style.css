@@ -1,27 +1,85 @@
 *{
     margin: 0px;
+    padding: 0px;
+    
 }
-.titulo{
-    background-color: rgb(139, 139, 19);
-    margin: 0px;
-    height: 200px;
-   text-align: center;
-   margin-bottom: 10px;
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
 }
+:root{
+    --cor01: #f7b600;
+    --cor02: #4e4e4e;
+    --cor03:    #CCC;
+}
+
+
+/*area cabeçalho*/
+/*
+    LAYOUT
+*/
+#area-cabecalho{
+    background-color: var(--cor01);
+    text-align: center;
+    padding: 15px;
+}
+#area-logo, #area-menu{
+    padding: 10px;
+}
+#area-principal{
+    background-color: white;
+    width: 920px;
+    margin: 0 auto;
+}
+
+/*Menu-links*/
+
+/*
+    Formatação de Menus
+*/
+
 a{
-    color: white;
-    font-size: 18px;
     text-decoration: none;
-    margin: 30px;
-    margin-top: 200px;
+}
+a:link, a:visited{
+    margin-right: 10px;
+    color: white;
+    font-weight: bold;
+    padding: 8px 12px;
 }
 a:hover{
     background-color: white;
-    padding: 10px;
-    border-radius: 10px;
-    color: black;
-    
+    border-radius: 3px;
+    color: #f7b600;
 }
-.branco{
+/*
+    area-conteudos
+*/
+#area-conteudos{
+    width: 920px;
+    margin: 0 auto;
+}
+#postagem, #area-lateral{
+    background-color: orange;
+}
+#postagem{
+    width: 660px;
+    float: left;
+    border: 1px solid red;
+}
+#area-lateral{
+    width: 240px;
+    float: right;
+    border: 1px solid red;
+}
+#conteudo{
+    padding: 10px;
+}
+/*formatações gerais*/
+h1{
+    color:  var(--cor02)  ; 
+    font-size: 2.5em;
+}
+span{
     color: white;
 }
