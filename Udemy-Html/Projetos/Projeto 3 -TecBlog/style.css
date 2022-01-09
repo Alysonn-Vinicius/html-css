@@ -1,20 +1,19 @@
+@charset "UTF-8";
 *{
     margin: 0px;
     padding: 0px;
-    
 }
 body{
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e6e6e6;
 }
 :root{
     --cor01: #f7b600;
-    --cor02: #4e4e4e;
-    --cor03:    #CCC;
+    --cor03:#4e4e4e;
+    --cor04:#CCC;
+    --cor05: #565656;
 }
-
-
-/*area cabeçalho*/
 /*
     LAYOUT
 */
@@ -24,16 +23,39 @@ body{
     padding: 15px;
 }
 #area-logo, #area-menu{
-    padding: 10px;
+    padding: 10px;  /*espalhamento entre os links e titulo*/
 }
 #area-principal{
     background-color: white;
     width: 920px;
     margin: 0 auto;
+    padding: 15px;
+}
+#area-postagens{
+    width: 660px;
+    float: left;
+}
+#area-lateral{
+    width: 240px;
+    float: right;
+}
+.postagem{
+    padding: 20px;
+    margin-bottom: 20px;
+    background: white;
+}
+#conteudo-lateral{
+    background: white;
+    padding: 10px;
+    margin-bottom: 20px; /*espaçamento entre uma caixa e outra*/
 }
 
-/*Menu-links*/
-
+#rodapé{
+    clear: both;
+    text-align: center;
+    background: var(--cor04);
+    padding: 15px;
+}
 /*
     Formatação de Menus
 */
@@ -42,44 +64,58 @@ a{
     text-decoration: none;
 }
 a:link, a:visited{
-    margin-right: 10px;
-    color: white;
-    font-weight: bold;
-    padding: 8px 12px;
+    color: var(--cor01);
 }
 a:hover{
+    text-decoration: underline;
+}
+#area-cabecalho a:link, #area-cabecalho a:visited{
+    margin-right: 10px;
+    color: white;
+    padding: 8px 12px;
+}
+#area-cabecalho a:hover{
     background-color: white;
     border-radius: 3px;
-    color: #f7b600;
+    color: var(--cor01);
+    text-decoration: none;
 }
+
 /*
-    area-conteudos
+    formatações-gerais    
 */
-#area-conteudos{
-    width: 920px;
-    margin: 0 auto;
-}
-#postagem, #area-lateral{
-    background-color: orange;
-}
-#postagem{
-    width: 660px;
-    float: left;
-    border: 1px solid red;
-}
-#area-lateral{
-    width: 240px;
-    float: right;
-    border: 1px solid red;
-}
-#conteudo{
-    padding: 10px;
-}
-/*formatações gerais*/
 h1{
-    color:  var(--cor02)  ; 
+    color: var(--cor03);
     font-size: 2.5em;
 }
-span{
+.span-titulo{
     color: white;
 }
+h2{
+    color: var(--cor01);
+}
+.data-postagem{
+    font-size:0.8em;
+    border-bottom:1px solid var(--cor03);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    display:block;
+}
+h3{
+    color: var(--cor05);
+    background-color: var(--cor04);
+    padding:5px;
+}
+.texto-lateral{
+    font-size:0.8em;
+    padding:5px;
+    border: 1px dotted #CCC;
+    margin-bottom:5px;
+}
+.texto-lateral2{
+    padding:5px;
+    border: 1px dotted #CCC
+}
+/*
+    Area - Postagem
+*/
