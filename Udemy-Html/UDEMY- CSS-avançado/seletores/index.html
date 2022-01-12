@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        li > a{
+            text-decoration: none;
+            color: coral;
+        }
+    </style>
+</head>
+<body>
+   <h1>Tipos de Seletores</h1>
+
+   <h3>Seletores Universais</h3>
+   <p>Aplica-se em todos os elementos no documento. <br>Ex: <strong>*{}</strong>Seleciona todos os elementos da página.</p>
+   <hr>
+
+   <h3>Seletores de texto</h3>
+   <p>É o mais usado comumente, seleciona o pela tag e as configurações são aplicadas em todos as tgas. <br> Ex: <strong>h1{}</strong> vai marcar todos os h1 da página.</p>
+   <hr>
+   
+   <h3>Seletores de Classe</h3>
+   <p>Seleciona um elemento cujo atributo class tem o valor especificado depois do ponto. <br>
+    Ex: <strong>.verde{"algum stilo"}</strong> sendo aplicados a todos que tem o atributo class com o valor verde. <br>
+    Ex2: <strong>p.verde{}</strong> será aplicado somente nas tags <b>"p"</b> que contenha o atributo class.
+   </p>
+   <hr>
+   
+   <h3>Seletores de Id</h3>
+   <p>Seleciona um elemento cujo atributo ID tem o valor especificado após o símbolo de #. <br>
+    Ex: <strong>#cabecalho{"algum stilo"}</strong> sendo aplicados a todos que tem o atributo ID com o valor cabecalho. <br>
+    </p>
+    <hr>
+
+    <h3>Seletor de filho</h3>
+    <p>Seleciona um elemento que é filho <abbr title="são aqueles que estão dentro da propria tag">direto</abbr> de outro. <br>
+        Ex:<strong>li > a {}</strong> Seleciona quaisquer elementos "a" que são filhos de um elemento "li" (mas não outros elementos a na página). <br>
+        Ex2: <br> 
+        <li><a href="">Home</a></li>
+        <li><a href="">sobre</a></li>
+        <p><a href="">Não é filho direto</a> como está dentro de outra tag mesmo perto, não é filho direto e não receberá a configuração</p>
+    </p>
+    <hr>
+
+    <h3>Seletor de descendente</h3>
+    <p>Seleciona um elemento que é descendente de outro elemento especificado (e não apenas filho direto desse elemento). <br>
+        Ex: <strong>p a {}</strong>Seleciona quaisquer elementos "a" que residem dentro de um elemento <"p"> mesmo e houver outros elementos aninhados entre ele. <br>
+        Diferente do seletor filho, ele pega todos os elemntos que estão dentro da primeira tag.
+    </p>
+    <hr>
+    <h3>Seletor de irmão adjacente</h3>
+    <p>Seleciona um elemento que é o <abbr title="é o elemento que estiver abaixo de outro">irmão</abbr>próximo de outro. <br>
+    Ex:<strong>h1+p {}</strong> Seleciona o <b>primeiro</b> elemento <"p"> depois de qualquer elemento <"h1">(mas não outros elementos <"p">).
+    </p>
+    <hr>
+
+    <h3>Seletor de irmão geral</h3>
+    <p>Seleciona um elemento que é um <abbr title="é o elemento que estiver abaixo de outro">irmão</abbr> de outro, embora ele não precise ser o elemento diretamente precedente sendo todos que forem irmãos seria aplicado, ao contrário do outro que seria somente o primerio.<br>
+    Ex: <strong>h1~p {}</strong>Se houvesse dois elementos <"p"> que fossem <abbr title="é o elemento que estiver abaixo de outro">irmãos</abbr> de um elemento <"h1">, essa regra se aplicaria ao dois.
+    </p>
+</body>
+</html>
