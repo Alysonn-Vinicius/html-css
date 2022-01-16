@@ -1,0 +1,66 @@
+@charset "UTF-8";
+:root{
+    --cor01:#643d87;
+    --cor02: #f79300;
+    --cor03:#db7d00;
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: var(--cor01) url(./img/fundo.jpg) no-repeat top center;
+}
+
+#container{
+    width: 400px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.3);
+    /*Configurações de préfixo*/
+    -webkit-border-radius: 10px;
+    -moz-border-radius:10px;
+    /*fim configurações prefixo*/
+    border-radius: 10px;
+    margin: 0 auto; /*deixa no centro mas no topo*/
+    margin-top:120px; /*afasta do topo, deixando centralizado.*/
+    text-align:center; /*centralizar imagem*/
+}
+#container img{
+    width:120px;
+    height:120px;
+    margin-top:-60px; /*margin negativa vai ultrapassar o limite, subindo a mais um pouco do container*/
+    margin-bottom: 30px;
+}
+
+input{
+    height: 40px;
+    width: 80%;
+    border:none;
+    font-size:18px; /*aumentar o tamanho da font*/
+    margin-bottom:10px; /*para afastar um input do outro*/
+    background-color: #FFf;
+    padding-left:40px; /*espaçamento para colocar os icones*/
+    background-repeat: no-repeat; /*para não repetir as imagens nos inputs*/
+    background-position: 10px; /*para deixar a imagem centralizada*/
+}
+input.email{
+    background-image: url(./img/icone-usuario.png);
+    
+}
+input.pass{
+    background-image: url(./img/icone-cadeado.png);
+    
+}
+input.button{
+   color:#fff;
+   background-color: var(--cor02);
+   border:2px solid var(--cor03);
+   width:90%;
+   padding:5px 20px;
+   /*Prefixo para que funcione corretamente em navegadores antigos*/
+   background: -webkit-linear-gradient(to bottom, #faa600, #f68a00);
+   background: -moz-linear-gradient(to bottom, #faa600, #f68a00);
+   background: -o-linear-gradient(to bottom, #faa600, #f68a00);
+
+   background: linear-gradient(to bottom, #faa600, #f68a00);
+}
+.button:active{
+    background: linear-gradient(to top, #faa600, #f68a00);
+}

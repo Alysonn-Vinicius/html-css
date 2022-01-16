@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        body{
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        fieldset{
+            margin: 1em 0;
+            border: 1px solid #ccc;
+            padding:1em;
+            background: #f8f8f8;
+        }
+
+        legend{
+            font-weight: bold;
+        }
+
+        label{
+            cursor:pointer;
+            display: block;
+        }
+       
+        input.radio{
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulários</h1>
+    <form action=""> <!--action é para mandar par uma linguagem do programação-->
+
+        <fieldset> <!--é uma borda onde pode agrupar um conjunto de dados-->
+            <legend>Detalhes de Contato</legend>    <!--Título do agrupamento de dados-->
+            
+            <div>
+                <label for="nome">Nome:</label>
+                    <input type="text" name="Nome" id="nome">
+                
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                   <input type="email" name="email" id="email">
+                
+            </div>
+
+            <div>
+                <label for="url">Url:</label>
+                    <input type="text" name="url" id="url">
+                
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Comentários</legend>
+            <div>
+                <label for="mensagem">
+                    <textarea name="" id="mensagem" cols="20" rows="5">
+
+                    </textarea>
+                </label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Lembrar de Mim</legend>
+            <div>
+                <label for="lembrar">
+                    <input class="radio" type="radio" name="lembrar" id="lembrar">Sim
+                </label>
+            </div>
+
+            <div>
+                <label for="lembrar">
+                    <input class="radio" type="radio" name="lembrar" id="lembrar">Não
+                </label>
+            </div>
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+    </form>
+    
+</body>
+</html>
