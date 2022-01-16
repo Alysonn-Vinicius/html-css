@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegação com Abas</title>
+    <style>
+        ul{
+            list-style-type: none;
+            padding:0px;
+        }
+        ul li {
+            float: left;
+            margin: 0.5px;
+        }
+        ul a {
+            border-radius:  10px 10px 0px 0px ;
+            padding: 20px;
+            background: #ff8c32;
+        }
+
+        a{
+            display: block;
+            text-decoration: none;
+            color:#000;
+            font-weight: bold;
+        }
+        a:hover{
+            background: #FFB200;
+            color:white;
+        }
+
+        #home .home a,
+        #Noticias .Noticias a,
+        #informações .informações a,
+        #serviços .serviços a,
+        #contato .contato a {
+            background: #FFB200;
+            color:#FFF;
+        }
+
+    </style>
+</head>
+<body id="informações">
+    <h1>Informações</h1>
+    <p>Marcando página</p> 
+    <ul>
+        <li class="home">
+            <a href="../index.html">Home</a>
+        </li>
+        <li class="Noticias">
+            <a href="noticias.html">Noticias</a>
+        </li>
+        <li class="informações">
+            <a href="informcoes.html">Informações</a>
+        </li>
+        <li class="serviços">
+            <a href="Serviços.html">Serviços</a>
+        </li>
+        <li class="contato">
+            <a href="Contato.html">Contato</a>
+        </li>
+    </ul> 
+    <p style="clear:both">Está é a página <strong>Informações.</strong></p>
+</body>
+</html>
