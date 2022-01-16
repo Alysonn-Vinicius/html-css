@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout fixo</title>
+    <style>
+        /*
+            Essa página não está repsonsiva e não está se adptando ao tamanho;
+        */
+        #principal{
+            width: 920px;
+        }
+        #title{
+            background: #30aacf;
+            color:#FFF;
+            height: 100px;
+            font-size:2.5em;
+            text-align: center;
+            line-height: 100px;
+        }
+        #conteudo{
+            float:right;
+            background: #CCCC;
+            width: 750px;
+            padding: 10px;
+            min-width: 750px;
+        }
+        #navegação{
+            background: #4e4e4e;
+            float:left;
+            min-width: 200px;
+        }
+        #navegação ul{
+            list-style-type: none;
+            margin:0px;
+            padding:0px;
+        }
+        #navegação a{
+            padding:6px;
+            width: 200px;
+            text-indent:30px;
+            height: 40px;
+            line-height: 40px;
+            color:white;
+            display: block;
+            text-decoration: none;
+        }
+        #navegação a:hover{
+            background-color:rgb(14, 117, 177);
+
+        }
+
+        #rodapé{
+            clear:both;
+            text-align:center;
+            background:rgb(16, 132, 209);
+            height:50px;
+            line-height: 50px;
+            color:#FFF;
+        }
+    </style>
+</head>
+<body>
+    <div id="Principal">
+        <div id="title">
+            Exemplo de título
+        </div>
+
+        <div id="conteudo">
+            <h2>Titulo 1</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis expedita obcaecati corrupti fugit sed tempora maxime distinctio, quod ullam porro consequuntur aliquam a at perferendis eius nostrum adipisci non? Molestias. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque in expedita consequuntur rerum maiores harum accusantium? Corporis ratione quod accusamus quos dolor quibusdam non enim commodi quae fuga. Harum, deleniti.</p>
+            <h2>Titulo 2</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis expedita obcaecati corrupti fugit sed tempora maxime distinctio, quod ullam porro consequuntur aliquam a at perferendis eius nostrum adipisci non? Molestias. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque in expedita consequuntur rerum maiores harum accusantium? Corporis ratione quod accusamus quos dolor quibusdam non enim commodi quae fuga. Harum, deleniti.</p>
+        </div>
+
+        <div id="navegação">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
+
+        <div id="rodapé">Rodapé</div>
+    </div>
+    
+</body>
+</html>
