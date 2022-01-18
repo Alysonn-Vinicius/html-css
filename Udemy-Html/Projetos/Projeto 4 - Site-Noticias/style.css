@@ -7,6 +7,11 @@
     --cor01:#b10333;
     --cor02:#69001d;
     --cor03:#de003e;
+    --cor04:#f5f5f5;
+    --cor05:#294c71;
+    --cor06:#f3f3f3;
+    --cor07:#870529;
+    --cor08:#dfdfdf;
 }
 
 body{
@@ -66,11 +71,14 @@ ul{
 #topo ul a:hover{
     color: var(--cor02);
 }
+/*Fim navegação topo*/
 
+/*Marcação de página atual*/
 body.home #navegação a#home,
 body.brasil #navegação a#brasil,
 body.internacional #navegação a#internacional,
 body.economia #navegação a#economia,
+body.saude #navegação a#saude,
 body.ciencia #navegação a#ciencia,
 body.fotos #navegação a#fotos
 {
@@ -78,3 +86,113 @@ body.fotos #navegação a#fotos
     background: var(--cor03);
     cursor: text;
 }   
+
+/*area conteudo*/
+#conteudo{
+    margin-top:60px;
+    background: var(--cor04);
+}
+
+#lateral{
+    width:180px;
+    float: left;
+    margin:0 0 20px -750px;
+}
+.caixa{
+    background:var(--cor06) url(./imagens/fundo-caixa.png);
+    margin:10px 0; /*0- laterais, 10 - top e bottom*/;
+    padding:5px;
+}
+
+h2{
+    background: var(--cor05);
+    font-size: 1em;
+    color: #fff;
+    padding:5px;
+}
+
+.conteudo-caixa{
+    padding:5px;
+    background: #FFF;
+    margin-top: 5px;
+}
+
+/*Configurações Menus-laterais*/
+#lateral ul a{
+    font-size: 0.9em;
+    text-decoration: none;
+    display:block;
+    padding:3px;
+    line-height: 30px;
+    color:#000;
+    border-bottom:1px solid var(--cor06);
+}
+
+#lateral ul a:hover{
+    color:#a1a1a1;
+    background: #f9f9f9 url(./imagens/marcador.png) no-repeat left center;
+    padding-left:20px;
+}
+
+label{
+    display:block;
+    cursor:pointer;
+}
+input{
+    font-size:0.9em;
+    background-color: #fff;
+    padding:5px;
+    width: 125px;
+}
+.submit{
+    width: 80px;
+    color: #FFF;
+    background: var(--cor01);
+    border: 2px solid var(--cor07);
+    padding:5px;
+}
+#primario{
+    width:270px;
+    float: left;
+    margin:0 0 20px 195px;
+}
+img{
+    border:2px solid var(--cor08);
+}
+/*formatnaod cabecalho*/
+h3{
+    text-transform: uppercase;
+    display: inline;
+    font-size: 0.8em;
+    padding:5px;
+    background: var(--cor02);
+    color:#FFF;
+}
+a{
+    color:var(--cor07);
+}
+
+#duas-colunas #primario{
+    width:555px;
+}
+
+#uma-colunas #primario{
+    width:750px;
+    margin:0 0 20px 0;
+}
+
+#secundario{
+    width:270px;
+    float: left;
+    margin:0 0 20px 15px;
+}
+
+#container-rodapé{
+    background: var(--cor05);
+    padding:20px;
+}
+#rodape{
+    width: 750px;;
+    margin: 0 auto;
+    color:#fff;
+}
