@@ -1,0 +1,80 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+:root{
+    --cor01:#b10333;
+    --cor02:#69001d;
+    --cor03:#de003e;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #FFF url(./imagens/fundo.png) repeat-x left top;
+}
+
+#container{
+    width: 750px;
+    margin: 0 auto;
+}
+
+#topo{
+    background:url(./imagens/detalhe-topo.png) no-repeat right top;
+    height: 150px;
+    padding-top:25px;
+}
+
+.logo{
+    height:66px;
+    width: 152px; /**/
+    text-indent: -4000px; /*apenas para esconder visualmente o h1, servindo apenas para leitores de telas.*/
+    background: url(./imagens/logo.png) no-repeat center;
+}
+
+/*Barra de Navegação*/
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#topo ul{
+    margin-top:30px; /*para afastar os links do h1.*/
+    background: var(--cor01);
+    float: left;
+}
+
+#topo ul > li{
+    float: left;
+}
+
+#topo ul a{
+    font-size:0.9em;
+    display:block;
+    padding:0.5em 1.5em;
+    line-height: 2.1em;
+    text-decoration: none;
+    color:#fff;
+    background: url(./imagens/divisor.png) no-repeat left center;
+}
+
+#topo ul .primeiro a{ /*para tirar o divsior do primeiro item*/
+    background: none;
+}
+
+#topo ul a:hover{
+    color: var(--cor02);
+}
+
+body.home #navegação a#home,
+body.brasil #navegação a#brasil,
+body.internacional #navegação a#internacional,
+body.economia #navegação a#economia,
+body.ciencia #navegação a#ciencia,
+body.fotos #navegação a#fotos
+{
+    color:#fff;
+    background: var(--cor03);
+    cursor: text;
+}   
