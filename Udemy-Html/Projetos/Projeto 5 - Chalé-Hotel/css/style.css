@@ -9,6 +9,10 @@
     --cor04:#8b8448;
     --cor05:#a29750;
     --cor06:#fff5b0;
+    --cor07:#6e672c;
+    --cor08:#7d7640;
+    --cor09:#f3efcb;
+    --cor10:#615b2d;
 }
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -17,7 +21,7 @@ body{
 }
 
 #container{
-    background:var(--cor01);
+    background:var(--cor01) url(/imagens/bg-container.png) top center repeat-y;
     margin: auto;
     position:relative;
     min-width:  740px ;
@@ -70,7 +74,7 @@ body{
     border-top: 1px solid var(--cor03);
     padding-top: 5px;
     padding-bottom:5px;
-    font-size: 0.8em;
+    font-size: 0.7em;
     color:var(--cor04);
 }
 
@@ -87,4 +91,96 @@ a.reserva{
     color:var(--cor06);
     padding: 5px 10px;
     float:right;
+}
+/* barra de navegação vertical*/
+#menu-navegacao{
+    margin-top: 15px;
+}
+ul{
+    list-style-type: none;
+
+}
+ul#navegacao{
+    float: left;
+}
+ul#navegacao a{
+    float: left;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    padding:5px;
+    color: var(--cor07);
+    line-height: 20px;
+}
+ul#navegacao a:hover{
+    background:var(--cor06);
+}
+.depoimento{
+    float: right;
+    width: 226px;
+    height: 164px;
+}
+
+/*Area conteudo*/
+
+#area-principal{
+    background: url(/imagens/bg-area-principal.png) top left repeat-x;
+    float:left;
+    width: 50%;
+    padding: 15px 0px;
+}
+#area-lateral{
+    background: url(/imagens/bg-area-lateral.png) top left repeat-x;
+    float:right;
+    width: 50%;
+    padding:20px 0px;
+}
+.conteudo{
+    margin: 0 auto;
+    width: 90%;
+}
+/*conteudo-lateral*/
+#beneficios li{
+    padding:8px;
+    border-bottom:1 px solid var(--cor09);
+    height:6em;
+}
+#beneficios li img {
+    float:left;
+    margin-right: 8px;
+}
+
+#beneficios li a p{
+    font-size: 0.8em;
+    color:#000;
+}
+
+#beneficios li h3{
+    font-size: 1.0em;
+    color:var(--cor10);
+    padding:5px 0;
+    background: url(/imagens/ornamento.png) no-repeat right;
+}   
+#beneficios li:hover{
+    background: var(--cor09);
+}
+
+
+
+#rodape{
+    clear:both;
+    padding:16px;
+    background: #fff url(/imagens/bg-rodape.png) repeat-x top;
+    color:var(--cor08);
+}   
+
+
+/*formatações de textos*/
+h2{
+    color:var(--cor08);
+    font-size:1.1em;
+    padding:5px 0px;
+}
+p{
+    font-size:1em;
+    margin-bottom:10px;
 }
