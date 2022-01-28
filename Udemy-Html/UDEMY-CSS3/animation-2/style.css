@@ -1,0 +1,70 @@
+/*Para criar animações, usamos a tag "keyframes" depois colocaremos o nome da animação*/
+@keyframes animação-circulo{ /*definimos o nome, agora iremos para a animação em si.*/
+    from{ /*inicio*/
+        background: rgb(12, 216, 216);
+        border-radius: 0px;
+        border: 2px solid black;
+        top:0;
+        left: 0;
+    }
+    to{ /*o jeito que vai ficar*/
+        background: darkblue;
+        border-radius: 800px;
+        border:10px solid rgb(1, 175, 9);
+        top: 100px;
+        left:450px;
+        bottom: 550px;
+        right: 50px;
+    }
+}
+
+/*é sempre recomendado usar os prefixos para que funcione corretamnete em todos os browsers
+@-webkit-keyframes animação-circulo{ /*definimos o nome, agora iremos para a animação em si.*/
+   /* from{ para onde vai
+        background: rgb(12, 216, 216);
+    }
+    to{
+        background: darkblue;
+    }
+}
+@-moz-keyframes animação-circulo{ /*definimos o nome, agora iremos para a animação em si.
+    from{ /*para onde vai
+        background: rgb(12, 216, 216);
+    }
+    to{
+        background: darkblue;
+    }
+}
+@-o-keyframes animação-circulo{ /*definimos o nome, agora iremos para a animação em si.
+    from{ /*para onde vai
+        background: rgb(12, 216, 216);
+    }
+    to{
+        background: darkblue;
+    }
+}
+*/
+
+
+
+
+
+#caixa{
+    height: 400px;
+    width: 400px;
+    background: rgb(12, 216, 216);
+    position: relative;
+    /*animation-name: animação-circulo;   /*coloca o nome da animação que você criou, fazendo assim a utilização dela
+    animation-duration: 5s; indica os segundos que a animação tem, até quando irá continuar
+    animation-iteration-count: 2; indica quantas vezes a animação será executada
+    animation-delay: 2s;  indica o tempo que vai demorar para começar a animação
+    animation-direction: alternate-reverse;
+
+    sua shorthand, onde colocamos tudo isso em um só:
+    animation: name, duration, delay, iteration-count, direction;*/
+    -webkit-animation: animação-circulo 5s 2s 2 alternate ;
+    -moz-animation: animação-circulo 5s 2s 2 alternate;
+    -o-animation: animação-circulo 5s 2s 2 alternate;
+    animation:animação-circulo 5s 2s 2 alternate;
+    
+}

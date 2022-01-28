@@ -1,0 +1,16 @@
+#caixa{
+    background: darkblue;
+    height: 200px;
+    width: 200px;
+    position: relative;
+}
+#caixa:hover{
+    background: darkcyan;
+    height: 500px;
+    width: 500px; 
+    background-image: radial-gradient(rgb(82, 248, 248), rgb(10, 124, 124), rgb(3, 68, 68));
+    border: 10px solid black;
+    border-radius: 500px;
+    transition: all 2s; /*Vai pegar todas as informações que foi colaco e fazer com que acontgeça nos segundos colocados.*/
+
+}

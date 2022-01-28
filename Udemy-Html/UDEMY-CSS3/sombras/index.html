@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to bottom, lightblue, darkblue);
+            height: 120vh;
+
+        }
+        #container{
+            width: 500px;
+            padding:10px;
+            margin:auto;
+            background-color: aliceblue;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+        #text{
+            background: rgb(224, 211, 211);
+            height: 100px;
+            width: 100px;
+            text-shadow: 2px 2px 2px black;
+        }
+        #box{
+            background: rgb(247, 245, 245);
+            height: 100px;
+            border-radius: 20px;
+            width: 100px;
+            box-sizing: border-box;
+            box-shadow: 10px 10px 20px rgb(94, 0, 0);
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Shadow - Sombras</h1>
+        <p>Podemos colocar sombras em elementos por meio de novas propriedades como:</p>
+        <div>
+            <ul>
+                <li><strong>Text-shadow:</strong></li>
+                <p>Onde podemos colocar <strong>dois valores</strong> o primeiro é sua <abbr title="é medida em px, 0px é o ponto inicial.">posição</abbr> na <strong>horizontal</strong>, A segunda é na <strong><abbr title="(N° -)Cima ou baixo(N° +)">vertical</abbr></strong> também podemos colocar um pouco de borrado no texto usando um terceiro valor também em px; e por ultimo vem a cor da sombra.</p>
+                <div id="text">
+                    texto com sombras
+                </div> <br>
+                
+                <li><strong>Box-shadow:</strong></li>
+                <p>Aplica sombras em um elemento caixa. Seguindo os mesmo valores do text-shadow, onde o primeiro é sua <abbr title="é medida em px, 0px é o ponto inicial.">posição</abbr> na <strong>horizontal</strong>, A segunda é na <strong><abbr title="(N° -)Cima ou baixo(N° +)">vertical</abbr></strong> também podemos colocar um pouco de borrado no texto usando um terceiro valor também em px, no 4° valor temos o "spret" ou espalhamento da sombra, meiddo também em px e podendo aumentar a sombra com ela; e por ultimo vem a cor da sombra. <br>Ex: </p>
+                <div id="box">caixa com a sombra</div>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
